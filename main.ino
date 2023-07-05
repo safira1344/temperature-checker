@@ -29,17 +29,17 @@ void loop() {
         float temp = dht.readTemperature();
 
         if (temp >= 30) {
-        digitalWrite(pinVermelho, HIGH);
-        digitalWrite(pinAmarelo, LOW);
-        digitalWrite(pinVerde, LOW);
+            digitalWrite(pinVermelho, HIGH);
+            digitalWrite(pinAmarelo, LOW);
+            digitalWrite(pinVerde, LOW);
         } else if (temp >= 20) {
-        digitalWrite(pinVermelho, LOW);
-        digitalWrite(pinAmarelo, HIGH);
-        digitalWrite(pinVerde, LOW);
+            digitalWrite(pinVermelho, LOW);
+            digitalWrite(pinAmarelo, HIGH);
+            digitalWrite(pinVerde, LOW);
         } else {
-        digitalWrite(pinVermelho, LOW);
-        digitalWrite(pinAmarelo, LOW);
-        digitalWrite(pinVerde, HIGH);
+            digitalWrite(pinVermelho, LOW);
+            digitalWrite(pinAmarelo, LOW);
+            digitalWrite(pinVerde, HIGH);
         }
-  }
+    }
 }
